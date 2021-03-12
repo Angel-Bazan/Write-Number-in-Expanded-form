@@ -1,0 +1,16 @@
+//Given a number return it as a string in expanded form 
+
+function expandedForm(num) {
+  
+  return num.toString().split("").reverse().map( (a,i) => a * Math.pow(10, i)).filter(a => a > 0).reverse().join(" + ")
+
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Methods are used to solve it because I want it to ignore many functions. 
+//toString() - will return a string 
+// split("") - split is used to split each variable inside the array 
+//reverse - the first array method becomes the last 
+// map with Math.power - will output each a multiplied by 10 and each i of the reminder number 
+// filter -- filter each a that is greater than 0 
+// reverse -- reverse again to return it to its original form 
+//join -- join is used to join back the arrays but with addition sign in between them 
